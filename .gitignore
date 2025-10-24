@@ -1,0 +1,11 @@
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace/
+xcuserdata/
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace/
