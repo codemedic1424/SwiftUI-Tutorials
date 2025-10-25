@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct QuoteView: View {
+    let quote: String
+    let author: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 8) {
+            Text(quote)
+                .font(.title)
+                .padding(.horizontal)
+                .multilineTextAlignment(.center)
+            HStack() {
+                Spacer()
+                Text("- \(author)")
+                    .font(.caption)
+                    .padding(.horizontal)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding()
+        .background(.thinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 
 #Preview {
-    QuoteView()
+    QuoteView(quote: "That is no moon!", author: "Master Obi Wan Kenobi")
 }
