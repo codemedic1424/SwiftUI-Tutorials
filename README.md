@@ -1,191 +1,160 @@
-# SwiftUI Tutorials (Develop in Swift + Apple Tutorials)
 
-This repository documents the integration of Apple's **Develop in Swift Fundamentals** curriculum with the official **SwiftUI Tutorials** from [developer.apple.com/tutorials/swiftui](https://developer.apple.com/tutorials/swiftui).
-All learning is applied through the *Daily Motivation* app project, which evolves across four structured weeks.
+# 🧭 Swift Learning & Practice Repository
 
----
-
-## Overview
-
-**Purpose:**  
-Transition from Swift Playgrounds to professional app development in Xcode using SwiftUI.  
-Learn to build real apps, manage state, use MVVM, and prepare for intermediate design and data work in later phases.
-
-**Core Objectives:**
-- Master SwiftUI layout, modifiers, and data flow.
-- Apply `@State`, `@Binding`, and `ObservableObject` for reactive UI design.
-- Introduce persistence with `UserDefaults` and adopt MVVM principles.
-- Design accessible and testable apps.
-- Build, run, and deploy on a real device.
+This repository integrates work from the **Develop in Swift: Fundamentals** book series and **Apple’s SwiftUI Tutorials**, forming a complete learning and practice environment for both **Swift syntax mastery** and **applied SwiftUI app development**.
 
 ---
 
-## Learning Roadmap
+## 🌱 Overview
 
-| Week | Fundamentals Focus | SwiftUI Tutorial | Goal |
-|------|--------------------|------------------|------|
-| 1 | SwiftUI Basics, Layout | Creating and Combining Views | Build first app screen |
-| 2 | State & Data Flow | Building Lists and Navigation | Add dynamic quotes |
-| 3 | Persistence & MVVM | Handling User Input + Animation | Save favorites and refine logic |
-| 4 | Testing & Polish | Drawing Paths and Shapes | Finalize and test app |
+This repo serves as a personal Swift learning lab and code portfolio, combining:
+- Concept practice labs (arrays, dictionaries, sets, optionals, etc.)
+- Project‑based learning (Daily Motivation app and others)
+- Apple’s SwiftUI tutorials (Creating Views, Lists, Input, and Animation)
+- Git workflow practice (branches, tags, commit conventions)
 
----
-
-## Learning Log
-
-### 2025-10-24 — Landmarks Tutorial — Detail View Complete
-Built the detail layout with `MapView`, `CircleImage`, and text sections.  
-Practiced SwiftUI layout using `VStack`, `HStack`, and `Spacer`.  
-Styled text using `.foregroundStyle(.green)` for the title and `.foregroundStyle(.secondary)` for subheadlines.  
-Added `Divider` and section titles with `.font(.title2)`.
-
-**Next Steps:**
-- Use semantic text styles where possible.
-- Add accessibility labels to images and controls.
-- Prepare for navigation and data passing.
+Each section reflects a step in the **Develop in Swift learning progression**, supported by structured version control and clean repository organization.
 
 ---
 
-## Contribution Guide
-
-Each tutorial lives under `/tutorials/<number>-<name>/` and contains:
-- `README.md` – key takeaways and notes.
-- `ExampleProject/` – the Xcode project or Playground files.
-- Optional `Screenshots/` folder for reference images.
-
-**Adding a New Tutorial:**
-1. Create a new numbered folder (e.g., `06-NewConceptName/`).
-2. Add the project and write a summary README.
-3. Update `/tracker/progress.md` and the root `LEARNING.md`.
-4. Commit and push your branch following the workflow below.
-
-**Commit Convention:**
-- `feat:` – new code, tutorial, or example  
-- `docs:` – notes or documentation updates  
-- `fix:` – bug or typo correction  
-- `chore:` – maintenance or cleanup
-
----
-
-## Git & Workflow Cheatsheet
-
-**Basic Commands**
-```bash
-git status
-git add -A
-git commit -m "docs: update learning log"
-git push
-git pull
-```
-
-**Branch per Tutorial**
-```bash
-git checkout -b 02-building-lists
-git push -u origin 02-building-lists
-# merge when finished
-git checkout main
-git merge 02-building-lists
-git branch -d 02-building-lists
-```
-
-**Tag Milestones**
-```bash
-git tag tutorial-ch2-complete
-git push origin tutorial-ch2-complete
-```
-
-**Check Remotes**
-```bash
-git remote -v
-```
-
----
-
-## Workflow & Branching
-
-This repository follows a simple, educational branching model to track progress across tutorials and milestones.
-
-### Structure
-```
-tutorials/
-├── 01-CreatingAndCombiningViews/
-├── 02-BuildingListsAndNavigation/
-└── 03-HandlingUserInput/
-```
-Each folder corresponds to a SwiftUI tutorial chapter with notes and example code.
-
-### Branching
-Create a new branch for each tutorial or milestone.
-
-| Tutorial | Branch Name |
-|-----------|--------------|
-| Creating and Combining Views | `01-creating-views` |
-| Building Lists and Navigation | `02-building-lists` |
-| Handling User Input | `03-handling-input` |
-
-**Example Workflow**
-```bash
-git checkout -b 02-building-lists
-# make updates and commit
-git push -u origin 02-building-lists
-# merge when finished
-git checkout main
-git merge 02-building-lists
-git branch -d 02-building-lists
-```
-
-### Tags
-Tag major milestones to mark tutorial completions or phase progress.
-```bash
-git tag tutorial-ch1-complete
-git push origin tutorial-ch1-complete
-```
-Examples:
-- `tutorial-ch1-complete`
-- `tutorial-ch2-complete`
-- `phase2-finished`
-
-### Notes
-- The root `LEARNING.md` serves as the single source of truth for your learning log.
-- Individual tutorial folders can include a local `README.md` for details.
-- Keep commit messages short, clear, and in Conventional Commit format.
-
----
-
-## Repository Structure
+## 🧱 Repository Structure
 
 ```
-SwiftUI Tutorials/
-├── README.md
-├── LEARNING.md
-├── tracker/
-│   ├── progress.md
-│   └── reflections.md
-├── tutorials/
+Swift_Learning_Repository/
+├── Daily_Motivation/               # SwiftUI app project (motivational quote app)
+├── Labs/                           # Practice playgrounds and concept exercises
+│   ├── Lab - Collections.playground
+│   ├── Additional Concept Practice Labs.playground
+│   └── Sources/Helpers.swift
+├── Tutorials/                      # SwiftUI Tutorial progress files
 │   ├── 01-CreatingAndCombiningViews/
 │   ├── 02-BuildingListsAndNavigation/
 │   ├── 03-HandlingUserInput/
-│   ├── 04-DrawingAndAnimation/
-│   └── 05-InterfacingWithUIKit/
-└── .gitignore
+│   └── 04-DrawingAndAnimation/
+├── Tracker/                        # Learning logs and notes
+│   ├── LEARNING.md
+│   ├── CHEATSHEET.md
+│   └── WORKFLOW.md
+├── Docs/                           # Support files and archived references
+│   ├── Git_Tags_Guide.md
+│   ├── Git_Commit_Conventions.md
+│   └── Repo_Structure.txt
+└── README.md                       # Unified documentation (this file)
 ```
 
 ---
 
-## Troubleshooting
+## 🧩 Git Workflow
 
-- Canvas not loading → Editor > Canvas (reopen)
-- Build fails → Product > Clean Build Folder (⇧⌘K)
-- Empty preview → Check `WindowGroup { ContentView() }`
-- Slow preview → Use Simulator instead of Live Preview
-- Missing simctl → `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`
+### 🔹 Commit Conventions
+
+Follow semantic, concise commit messages to keep repo history clear.
+
+| Type | Purpose | Example |
+|------|----------|----------|
+| `feat:` | New feature or addition | `feat(quotes): add random quote button logic` |
+| `fix:` | Bug fix | `fix(ui): correct layout alignment issue` |
+| `docs:` | Documentation update | `docs(readme): clarify repo workflow` |
+| `style:` | Code formatting | `style(labs): adjust indentation` |
+| `refactor:` | Code restructure, no behavior change | `refactor(model): simplify data binding` |
+| `chore:` | Maintenance, dependencies, or cleanup | `chore: remove deprecated playground` |
 
 ---
 
-## Resources
+### 🔹 Common Git Commands
 
-- *Develop in Swift Fundamentals* (Apple Education)
-- *Develop in Swift Data Collections* (for Phase 3)
-- *Apple SwiftUI Tutorials* – [developer.apple.com/tutorials/swiftui](https://developer.apple.com/tutorials/swiftui)
-- *Apple Developer Documentation* – SwiftUI Essentials
-- *Swift Playgrounds* – Get Started with Apps
+| Action | Command |
+|---------|----------|
+| Initialize repo | `git init` |
+| Stage all changes | `git add -A` |
+| Commit changes | `git commit -m "feat(lab): complete collections exercise"` |
+| Push to remote | `git push origin main` |
+| Create branch | `git checkout -b feature/new-lab` |
+| Merge branch | `git merge feature/new-lab` |
+| View status | `git status` |
+
+---
+
+### 🔹 Tag Workflow
+
+Tags are used to mark milestones (e.g., lab completions, tutorial checkpoints).
+
+| Action | Command | Description |
+|---------|----------|-------------|
+| Create tag | `git tag lab-3-complete` | Create local tag |
+| Push tags | `git push origin --tags` | Push all tags to GitHub |
+| List tags | `git tag` | View local tags |
+| Delete local tag | `git tag -d lab-3-complete` | Remove local tag |
+| Delete remote tag | `git push origin :refs/tags/lab-3-complete` | Remove from GitHub |
+
+Tags appear under **Code → Branch → Tags** in GitHub and can be converted to releases if desired.
+
+---
+
+## 🧱 Branch & Contribution Model
+
+1. **Create a feature branch** for new labs, tutorials, or project features:
+   ```bash
+   git checkout -b feature/additional-labs
+   ```
+
+2. **Commit changes** using the established convention:
+   ```bash
+   git commit -m "feat(labs): add new collections exercises"
+   ```
+
+3. **Push branch** to GitHub for sync or collaboration:
+   ```bash
+   git push origin feature/additional-labs
+   ```
+
+4. **Merge** completed work into `main` once reviewed or verified:
+   ```bash
+   git checkout main
+   git merge feature/additional-labs
+   ```
+
+---
+
+## 🧠 Learning Integration
+
+This repository tracks continuous learning through the **Develop in Swift: Fundamentals** and **SwiftUI Tutorials** ecosystems.
+
+| Module | Area of Focus | Integration |
+|---------|----------------|-------------|
+| Arrays & Dictionaries | Swift Core | Labs + Practice Playgrounds |
+| Control Flow & Functions | Swift Fundamentals | DIS Labs + Playground experiments |
+| SwiftUI Views & Layouts | SwiftUI Tutorials | Daily Motivation app |
+| State & Data Flow | SwiftUI Tutorials | Dynamic quote updates |
+| JSON Handling | Advanced | Planned for Week 3 of app project |
+
+---
+
+## 🧰 Tools & Environment
+
+- **Language:** Swift 5.10+  
+- **Frameworks:** SwiftUI, Foundation  
+- **IDE:** Xcode 15+  
+- **Playgrounds:** iPad + Mac compatible (.playground bundles)  
+- **Version Control:** GitHub, Working Copy (iPad)  
+- **Minimum Target:** iOS 17
+
+---
+
+## 📚 Resources & References
+
+- [Apple Developer — SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui)
+- [Develop in Swift: Fundamentals](https://books.apple.com/us/book/develop-in-swift-fundamentals/id1581181598)
+- [Swift Language Guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+- [Xcode Documentation](https://developer.apple.com/xcode/)
+
+---
+
+## 📜 License
+
+This repository and its contents are part of an educational portfolio.  
+All materials may be reused for personal learning and non‑commercial demonstration purposes.
+
+---
+
+> “The best way to learn Swift is to *build* with it.” 🚀
