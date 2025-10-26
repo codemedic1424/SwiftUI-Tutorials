@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='5.0' target-platform='ios' requires-full-environment='true'>
+    <pages>
+        <page name='1-Arrays-Basics'/>
+        <page name='2-Arrays-Operations'/>
+        <page name='3-Dictionaries-Basics'/>
+        <page name='4-Dictionaries-Iteration'/>
+        <page name='5-Sets-Basics'/>
+        <page name='6-Combo-Challenges'/>
+    </pages>
+    <timeline fileName='timeline.xctimeline'/>
+</playground>
