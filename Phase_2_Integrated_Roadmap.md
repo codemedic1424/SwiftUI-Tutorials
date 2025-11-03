@@ -4,6 +4,17 @@
 Phase 2 marks the transition from learning Swift in Playgrounds to developing full SwiftUI apps in Xcode.  
 This phase integrates lessons from **Develop in Swift Fundamentals** with the **Apple SwiftUI Tutorials**, culminating in the completion of the *Daily Motivation* app.  
 
+### 🧩 Dual Integration Overview
+
+This phase unites two official Apple learning paths — **Develop in Swift Fundamentals** (Apple Education) and the **Apple SwiftUI Tutorials** (developer.apple.com/tutorials/swiftui) — to form a complete applied learning experience.
+
+| Week | Develop in Swift Fundamentals | Apple SwiftUI Tutorial |
+|------|-------------------------------|------------------------|
+| **1** | Constants, Variables, Data Types, Control Flow, SwiftUI Layout | *Creating and Combining Views* |
+| **2** | Functions, Structures & Classes, State & Bindings, Data Collections | *Building Lists and Navigation* |
+| **3** | App Design & Architecture, Optionals, Persistence, MVVM | *Handling User Input* + *Animating Views and Transitions* |
+| **4** | Testing, Accessibility, Interface Refinement, Deployment | *Drawing Paths and Shapes* + *Composing Complex Interfaces* |
+
 **Objectives:**
 - Gain proficiency with SwiftUI and Xcode workflow
 - Understand state, data flow, and view composition
