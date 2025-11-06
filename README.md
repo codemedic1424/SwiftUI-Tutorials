@@ -50,6 +50,39 @@ Swift_Learning_Repository/
 
 ---
 
+## 🧩 Guided Projects — Apple “Develop in Swift” (2025 Edition)
+
+These projects come directly from Apple’s **Develop in Swift** curriculum and were imported into this repository to serve as reference and practice material.
+
+They demonstrate real-world UIKit and SwiftUI fundamentals that reinforce topics covered in the roadmap.
+
+### 📚 Current Projects
+
+| Project | Description | Status |
+|----------|--------------|--------|
+| **Hello** | The classic “Hello” app — introduces Xcode layout, app lifecycle, and Storyboards. | ✅ Complete |
+| **CommonInputControls** | Demonstrates text fields, buttons, sliders, and labels — basic UIKit controls. | ✅ Complete |
+| **Daily Motivation (Custom App)** | Primary SwiftUI project built during Phase 2 — integrates State, MVVM, and data persistence. | 🔄 In Progress |
+
+### 🔗 Source Paths
+```
+Guided Projects/
+├── Hello/
+│   └── Hello.xcodeproj
+├── CommonInputControls/
+│   └── CommonInputControls.xcodeproj
+```
+
+Each guided project is fully integrated into version control (no nested repositories) and may be referenced in the Phase 2 and Phase 3 roadmaps for cross-learning between UIKit and SwiftUI.
+
+### 🧠 Key Concepts Reinforced
+- App lifecycle and entry points (`AppDelegate`, `SceneDelegate`)
+- UIKit fundamentals (storyboards, outlets, actions)
+- Transitioning from UIKit → SwiftUI concepts
+- Xcode workspace organization and Git workflow
+
+---
+
 ## 🧩 Labs — Develop in Swift Fundamentals
 
 This section contains all lab activities from the **Develop in Swift: Fundamentals** course.  
