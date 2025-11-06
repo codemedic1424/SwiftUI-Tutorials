@@ -2,18 +2,25 @@
 
 ## Overview
 Phase 2 marks the transition from learning Swift in Playgrounds to developing full SwiftUI apps in Xcode.  
-This phase integrates lessons from **Develop in Swift Fundamentals** with the **Apple SwiftUI Tutorials**, culminating in the completion of the *Daily Motivation* app.  
+This phase integrates lessons from **Apple’s Develop in Swift tutorials** (2025 edition) — including Swift and SwiftUI content — culminating in the completion of the *Daily Motivation* app.  
+
+⚙️ *Updated to align with Apple’s 2025 “Develop in Swift” tutorials, which unify the previous Fundamentals and SwiftUI tutorial paths into a single learning experience.*
 
 ### 🧩 Dual Integration Overview
 
-This phase unites two official Apple learning paths — **Develop in Swift Fundamentals** (Apple Education) and the **Apple SwiftUI Tutorials** (developer.apple.com/tutorials/swiftui) — to form a complete applied learning experience.
+This phase unites two learning tracks inside the new **Develop in Swift** materials:
 
-| Week | Develop in Swift Fundamentals | Apple SwiftUI Tutorial |
-|------|-------------------------------|------------------------|
-| **1** | Constants, Variables, Data Types, Control Flow, SwiftUI Layout | *Creating and Combining Views* |
-| **2** | Functions, Structures & Classes, State & Bindings, Data Collections | *Building Lists and Navigation* |
-| **3** | App Design & Architecture, Optionals, Persistence, MVVM | *Handling User Input* + *Animating Views and Transitions* |
-| **4** | Testing, Accessibility, Interface Refinement, Deployment | *Drawing Paths and Shapes* + *Composing Complex Interfaces* |
+- Foundational Swift topics (variables, control flow, collections, optionals, etc.)
+- SwiftUI-focused app-building units (views, state, navigation, input, and animation)
+
+For planning purposes, the roadmap is still organized by week and concept focus:
+
+| Week | Swift / App Foundations (Develop in Swift) | SwiftUI / App-Building Focus |
+|------|--------------------------------------------|-------------------------------|
+| **1** | Constants, Variables, Data Types, Control Flow, Xcode basics | Building simple SwiftUI layouts (VStack, Text, Button) |
+| **2** | Functions, Structures & Classes, State & Bindings, Collections | Lists, navigation, and multi-screen flows |
+| **3** | App Design & Architecture, Optionals, Persistence, MVVM | Handling user input and basic animations |
+| **4** | Testing, Accessibility, Refinement, Deployment | Composing more complex interfaces and polishing the app |
 
 **Objectives:**
 - Gain proficiency with SwiftUI and Xcode workflow
@@ -26,14 +33,15 @@ This phase unites two official Apple learning paths — **Develop in Swift Funda
 
 ## Week 1 — Xcode Project & SwiftUI Basics
 
-**Fundamentals Alignment:**
+**Develop in Swift Alignment (2025):**
 - Constants, Variables, and Data Types
 - Control Flow
 - Introduction to Xcode
 - SwiftUI Basics and Layout
 
-**SwiftUI Tutorial:**
-- Creating and Combining Views
+**SwiftUI / App-Building Focus:**
+- Building simple SwiftUI views (similar to “Creating and Combining Views”)
+- Understanding how views compose with stacks
 
 **Goal:**
 Build the first screen of the *Daily Motivation* app with a static quote and a button.
@@ -57,14 +65,15 @@ Build the first screen of the *Daily Motivation* app with a static quote and a b
 
 ## Week 2 — State & Data Flow
 
-**Fundamentals Alignment:**
+**Develop in Swift Alignment (2025):**
 - Functions
 - Structures and Classes
 - State and Bindings
 - Data Collections and Structures
 
-**SwiftUI Tutorial:**
-- Building Lists and Navigation
+**SwiftUI / App-Building Focus:**
+- Building dynamic interfaces with lists and navigation
+  (similar to “Building Lists and Navigation”)
 
 **Goal:**
 Add dynamic behavior using `@State` and `@Binding` to display random quotes and toggle favorites.
@@ -73,7 +82,7 @@ Add dynamic behavior using `@State` and `@Binding` to display random quotes and 
 - Add an array of quotes and a `@State` variable for the current quote index
 - Change quote text when “New Quote” is tapped
 - Add a “Favorite” toggle (`@State var isFavorite = false`)
-- Experiment with Lists and NavigationStack
+- Experiment with `List` and `NavigationStack`
 
 **Checklist:**
 - Quotes update dynamically
@@ -88,15 +97,15 @@ Add dynamic behavior using `@State` and `@Binding` to display random quotes and 
 
 ## Week 3 — Persistence & Simple MVVM
 
-**Fundamentals Alignment:**
+**Develop in Swift Alignment (2025):**
 - App Design and Architecture
 - Optionals and Enumerations
 - Data Persistence
 - Model-View-ViewModel (MVVM) Pattern
 
-**SwiftUI Tutorial:**
-- Handling User Input
-- Animating Views and Transitions
+**SwiftUI / App-Building Focus:**
+- Handling user input and basic animations
+  (similar to “Handling User Input” + “Animating Views and Transitions” concepts)
 
 **Goal:**
 Introduce data persistence using `UserDefaults` and refactor logic into an MVVM structure.
@@ -120,15 +129,16 @@ Introduce data persistence using `UserDefaults` and refactor logic into an MVVM 
 
 ## Week 4 — Polish & Testing
 
-**Fundamentals Alignment:**
+**Develop in Swift Alignment (2025):**
 - App Testing and Debugging
 - Interface Refinement
 - Accessibility
 - App Deployment
 
-**SwiftUI Tutorial:**
-- Drawing Paths and Shapes
-- Composing Complex Interfaces
+**SwiftUI / App-Building Focus:**
+- Composing more complex interfaces
+- Drawing and small custom visual touches
+  (similar to “Drawing Paths and Shapes” and UI polish tutorials)
 
 **Goal:**
 Complete, polish, and test the *Daily Motivation* app for deployment.
@@ -147,7 +157,7 @@ Complete, polish, and test the *Daily Motivation* app for deployment.
 - Icons and colors finalized
 
 **Stretch:**
-- Experiment with custom shapes from the Drawing tutorial
+- Experiment with simple custom shapes or visuals
 - Explore App Store deployment workflow
 
 ---
@@ -162,8 +172,8 @@ Complete, polish, and test the *Daily Motivation* app for deployment.
 ---
 
 ## Resources
-- *Develop in Swift Fundamentals* (Apple Education)
+- **Develop in Swift (2025)** – Tutorials & curriculum  
+  <https://developer.apple.com/tutorials/develop-in-swift/>
 - *Develop in Swift Data Collections* (for next phase)
-- *Apple SwiftUI Tutorials* – [developer.apple.com/tutorials/swiftui](https://developer.apple.com/tutorials/swiftui)
 - *Apple Developer Documentation* – SwiftUI Essentials
 - *Swift Playgrounds* – Get Started with Apps
